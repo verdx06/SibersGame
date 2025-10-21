@@ -14,7 +14,11 @@ struct GameLauncher {
         viewModel.descriptionCurrentRoom(world)
         gameLoop(viewModel: viewModel, world: &world)
     }
-    
+}
+
+GameLauncher.start()
+
+private extension GameLauncher {
     private static func clearScreen() {
         print("\u{001B}[2J\u{001B}[H")
     }
@@ -31,7 +35,6 @@ struct GameLauncher {
         """
         print(instructions)
     }
-    
     private static func gameLoop(viewModel: ViewModel, world: inout World) {
         while true {
             guard let input = readLine()?.uppercased(),
@@ -72,5 +75,3 @@ struct GameLauncher {
         }
     }
 }
-
-GameLauncher.start()

@@ -59,16 +59,19 @@ final class MazeGeneratorService {
         let position = world.player.position
         let room = world.rooms[position.y][position.x]
         let directions = room.doors.map { $0.rawValue }.sorted().joined(separator: ", ")
-        let items = room.items.map { "\($0)" }.joined(separator: ", ")
-        let eatInfo = room.food != nil ? "\nEat: \(room.food!)" : ""
-        print("You are in the room [\(position.x), \(position.y)].".cyan() +
-              "There are [\(room.doors.count)] doors:".yellow() +
-              " [\(directions)].".green() +
-              "Items in the room:".blue() +
-              " [\(items)]".magenta() +
-              "\(eatInfo)".green() +
-              "\nSteps:".bold() +
-              " \(world.player.steps)".red())
+        var allItems = room.items.map { $0.rawValue.lowercased() }
+        if let food = room.food {
+            allItems.append(food.rawValue.lowercased())
+        }
+        let items = allItems.joined(separator: ", ")
+        
+        print("You are in the room [\(position.x), \(position.y)]. ".cyan() +
+              "There are [\(room.doors.count)] doors: ".yellow() +
+              "[\(directions)]. ".green() +
+              "Items in the room: ".blue() +
+              "[\(items)].".magenta() +
+              "\nSteps: ".bold() +
+              "\(world.player.steps)".red())
     }
     
 }
