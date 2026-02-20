@@ -21,11 +21,11 @@ struct Colorize {
 }
 
 extension String {
-    func red() -> String { "\(Colorize.red)\(self)\(Colorize.reset)" }
-    func green() -> String { "\(Colorize.green)\(self)\(Colorize.reset)" }
-    func yellow() -> String { "\(Colorize.yellow)\(self)\(Colorize.reset)" }
-    func blue() -> String { "\(Colorize.blue)\(self)\(Colorize.reset)" }
-    func cyan() -> String { "\(Colorize.cyan)\(self)\(Colorize.reset)" }
-    func magenta() -> String { "\(Colorize.magenta)\(self)\(Colorize.reset)" }
-    func bold() -> String { "\(Colorize.bold)\(self)\(Colorize.reset)" }
+    var red: String { "\(Colorize.red)\(self)\(Colorize.reset)" }
+    var green: String { "\(Colorize.green)\(self)\(Colorize.reset)" }
+    var yellow: String { "\(Colorize.yellow)\(self)\(Colorize.reset)" }
+    var blue: String { "\(Colorize.blue)\(self)\(Colorize.reset)" }
+    var cyan: String { "\(Colorize.cyan)\(self)\(Colorize.reset)" }
+    var magenta: String { "\(Colorize.magenta)\(self)\(Colorize.reset)" }
+    var bold: String { "\(Colorize.bold)\(self)\(Colorize.reset)" }
 }

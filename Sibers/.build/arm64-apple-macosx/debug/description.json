@@ -1,0 +1,520 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Sibers-arm64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/sources",
+      "importPath" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Command.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Direction.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Food.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/GameStatus.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Item.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Player.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Position.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Room.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Services/MazeGeneratorService/MazeGeneratorService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Services/PlayerService/PlayerService+Constants.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Services/PlayerService/PlayerService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Presentation/Helpers/RoomState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Presentation/View/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Presentation/ViewModel/ViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Utils/Colorize.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "Sibers",
+      "moduleOutputPath" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Modules/Sibers.swiftmodule",
+      "objects" : [
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Command.swift.o",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Direction.swift.o",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Food.swift.o",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/GameStatus.swift.o",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Item.swift.o",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Player.swift.o",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Position.swift.o",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Room.swift.o",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/MazeGeneratorService.swift.o",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/PlayerService+Constants.swift.o",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/PlayerService.swift.o",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/RoomState.swift.o",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/main.swift.o",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/ViewModel.swift.o",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Colorize.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "Sibers_main",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "sibers"
+      ],
+      "outputFileMapPath" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Command.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Direction.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Food.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/GameStatus.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Item.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Player.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Position.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Room.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/MazeGeneratorService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/PlayerService+Constants.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/PlayerService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/RoomState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/ViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Colorize.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Modules/Sibers.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Command.swift",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Direction.swift",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Food.swift",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/GameStatus.swift",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Item.swift",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Player.swift",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Position.swift",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Room.swift",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Services/MazeGeneratorService/MazeGeneratorService.swift",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Services/PlayerService/PlayerService+Constants.swift",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Services/PlayerService/PlayerService.swift",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Presentation/Helpers/RoomState.swift",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Presentation/View/main.swift",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Presentation/ViewModel/ViewModel.swift",
+        "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Utils/Colorize.swift"
+      ],
+      "tempsPath" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Sibers" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Sibers",
+      "-package-name",
+      "sibers",
+      "-incremental",
+      "-c",
+      "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Command.swift",
+      "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Direction.swift",
+      "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Food.swift",
+      "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/GameStatus.swift",
+      "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Item.swift",
+      "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Player.swift",
+      "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Position.swift",
+      "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Room.swift",
+      "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Services/MazeGeneratorService/MazeGeneratorService.swift",
+      "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Services/PlayerService/PlayerService+Constants.swift",
+      "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Services/PlayerService/PlayerService.swift",
+      "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Presentation/Helpers/RoomState.swift",
+      "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Presentation/View/main.swift",
+      "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Presentation/ViewModel/ViewModel.swift",
+      "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Utils/Colorize.swift",
+      "-I",
+      "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "Sibers_main",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "sibers",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Sibers" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "enableAllTraits" : false
+  },
+  "writeCommands" : {
+    "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers-entitlement.plist"
+    },
+    "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Command.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Direction.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Food.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/GameStatus.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Item.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Player.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Position.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Models/Room.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Services/MazeGeneratorService/MazeGeneratorService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Services/PlayerService/PlayerService+Constants.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Domain/Services/PlayerService/PlayerService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Presentation/Helpers/RoomState.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Presentation/View/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Presentation/ViewModel/ViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/Sources/Utils/Colorize.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/sources"
+    },
+    "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Colorize.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Command.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Direction.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Food.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/GameStatus.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Item.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/MazeGeneratorService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Player.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/PlayerService+Constants.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/PlayerService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Position.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/Room.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/RoomState.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/ViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/Sibers.product/Objects.LinkFileList"
+    },
+    "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/vitalijbagautdinov/Desktop/SibersGame/Sibers/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}
