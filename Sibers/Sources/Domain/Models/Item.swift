@@ -11,4 +11,5 @@ enum Item: String, CaseIterable {
     case key = "KEY"
     case chest = "CHEST"
     case torchlight = "TORCHLIGHT"
+    case gold = "GOLD"
 }

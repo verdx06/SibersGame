@@ -10,5 +10,6 @@ import Foundation
 struct Player {
     var position: Position
     var inventory: [Item]
+    var coins: Int
     var steps: Int
 }

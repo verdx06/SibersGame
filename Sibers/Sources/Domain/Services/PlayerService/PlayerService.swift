@@ -65,14 +65,10 @@ final class PlayerService {
         let position = player.position
         let room = rooms[position.y][position.x]
         
-        guard !room.items.isEmpty else {
-            return Constants.getNothing
-        }
-        
         switch item {
         case .key:
             guard room.items.contains(.key) else {
-                return Constants.getNoKey
+                return room.items.isEmpty ? Constants.getNothing : Constants.getNoKey
             }
             
             rooms[position.y][position.x].items.removeAll { $0 == .key }
@@ -90,6 +86,15 @@ final class PlayerService {
             rooms[position.y][position.x].items.removeAll { $0 == .torchlight }
             player.inventory.append(.torchlight)
             return Constants.getTorchlight
+            
+        case .gold:
+            guard let goldAmount = room.gold else {
+                return Constants.getNoGold
+            }
+            
+            rooms[position.y][position.x].gold = nil
+            player.coins += goldAmount
+            return Constants.getGold(amount: goldAmount)
         }
     }
     
@@ -99,32 +104,37 @@ final class PlayerService {
         item: Item
     ) -> String {
         let position = player.position
-        let inventory = player.inventory
-        guard !inventory.isEmpty else {
-            return Constants.dropEmpty
-        }
+
         switch item {
-        case .key:
-            guard player.inventory.contains(.key) else {
-                return Constants.dropEmpty
+        case .gold:
+            guard player.coins > 0 else {
+                return Constants.dropNoGold
             }
-            
+            let amount = player.coins
+            player.coins = 0
+            let currentGold = rooms[position.y][position.x].gold ?? 0
+            rooms[position.y][position.x].gold = currentGold + amount
+            return Constants.dropGold(amount: amount)
+
+        case .key:
+            guard !player.inventory.isEmpty else { return Constants.dropEmpty }
+            guard player.inventory.contains(.key) else { return Constants.dropNo }
             player.inventory.removeAll { $0 == .key }
             rooms[position.y][position.x].items.append(.key)
             return Constants.dropItem
-        case .chest:
-            return ""
+
         case .torchlight:
-            guard player.inventory.contains(.torchlight) else {
-                return Constants.dropEmpty
-            }
-            
+            guard !player.inventory.isEmpty else { return Constants.dropEmpty }
+            guard player.inventory.contains(.torchlight) else { return Constants.dropNo }
             player.inventory.removeAll { $0 == .torchlight }
             rooms[position.y][position.x].items.append(.torchlight)
             if rooms[position.y][position.x].isDark {
                 rooms[position.y][position.x].isLit = true
             }
             return Constants.dropItem
+
+        case .chest:
+            return ""
         }
     }
     

@@ -12,7 +12,7 @@ final class ViewModel {
     private let mazeGenerator: MazeGeneratorService
     private let playerService: PlayerService
     private var rooms: [[Room]] = []
-    private var player = Player(position: Position(x: 0, y: 0), inventory: [], steps: 0)
+    private var player = Player(position: Position(x: 0, y: 0), inventory: [], coins: 0, steps: 0)
     private var width: Int = 0
     private var height: Int = 0
     
@@ -50,6 +50,8 @@ final class ViewModel {
         let state = currentRoomState()
         if state.isMoveOnly {
             return "Can't see anything in this dark place!" +
+                "\nCoins: ".bold +
+                "\(player.coins)".yellow +
                 "\nSteps: ".bold +
                 "\(state.steps)".red
         }
@@ -58,12 +60,17 @@ final class ViewModel {
         if let food = state.room.food {
             allItems.append(food.rawValue.lowercased())
         }
+        if let goldAmount = state.room.gold {
+            allItems.append("gold (\(goldAmount) coins)")
+        }
         let items = allItems.joined(separator: ", ")
         return "You are in the room [\(state.position.x), \(state.position.y)]. ".cyan +
             "There are [\(state.room.doors.count)] doors: ".yellow +
             "[\(directions)]. ".green +
             "Items in the room: ".blue +
             "[\(items)].".magenta +
+            "\nCoins: ".bold +
+            "\(player.coins)".yellow +
             "\nSteps: ".bold +
             "\(state.steps)".red
     }

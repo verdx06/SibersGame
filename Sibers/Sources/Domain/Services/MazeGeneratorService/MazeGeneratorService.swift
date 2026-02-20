@@ -54,7 +54,8 @@ private extension MazeGeneratorService {
                         Room(
                             doors: [],
                             items: [],
-                            food: nil
+                            food: nil,
+                            gold: nil
                         )
                     }
             }
@@ -76,6 +77,7 @@ private extension MazeGeneratorService {
         let player = Player(
             position: Position(x: 0, y: 0),
             inventory: [],
+            coins: 0,
             steps: roomCount
         )
         
@@ -112,6 +114,12 @@ private extension MazeGeneratorService {
         rooms[keyPosition.y][keyPosition.x].items.append(.key)
         rooms[chestPosition.y][chestPosition.x].items.append(.chest)
         
+        let goldPositions = selectGoldPositions(from: activePositions, roomCount: roomCount)
+        for position in goldPositions {
+            let amount = Int.random(in: 50...500)
+            rooms[position.y][position.x].gold = amount
+        }
+        
         return (rooms, player)
     }
     
@@ -141,4 +149,9 @@ private extension MazeGeneratorService {
         return candidates.randomElement()
     }
     
+    func selectGoldPositions(from activePositions: [Position], roomCount: Int) -> [Position] {
+        let goldCount = min(roomCount / 3, activePositions.count)
+        guard goldCount > 0 else { return [] }
+        return Array(activePositions.shuffled().prefix(goldCount))
+    }
 }

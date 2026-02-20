@@ -11,6 +11,7 @@ struct Room {
     var doors: Set<Direction>
     var items: [Item]
     var food: Food?
+    var gold: Int?
     var isDark: Bool = false
     var isLit: Bool = false
 }
